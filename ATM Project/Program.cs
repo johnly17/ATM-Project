@@ -2,22 +2,7 @@
 
 
 public class CardHolder
-{
-    public string CardNum { get; set; }
-    public int Pin { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public double Balance { get; set; }
-
-    public CardHolder(string cardNum, int pin, string firstName, string lastName, double balance)
-    {
-        CardNum = cardNum;
-        Pin = pin;
-        FirstName = firstName;
-        LastName = lastName;
-        Balance = balance;
-    }
-
+{   
     public static void Main(string[] args)
     {
         CardHolder john = new CardHolder("1111 2222 3333 4444", 1234, "John", "Ly", 1250.00);
@@ -119,4 +104,20 @@ public class CardHolder
 
     }
 
+    public string CardNum { get; set; }
+    public int Pin { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public double Balance { get; set; }
+
+    public CardHolder(string cardNum, int pin, string firstName, string lastName, double balance)
+    {
+        CardNum = cardNum;
+        Pin = pin;
+        FirstName = firstName;
+        LastName = lastName;
+        Balance = balance;
+    }
+
+ 
 }
