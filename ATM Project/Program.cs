@@ -39,7 +39,7 @@ public class CardHolder
             {
                 if (amount > 0)
                 {
-                    cardHolder.Balance = amount;
+                    cardHolder.Balance += amount;
                     Console.WriteLine($"Deposit of ${amount} successful. New balance: ${cardHolder.Balance}");
                 }
                 else
@@ -91,10 +91,10 @@ public class CardHolder
             Console.WriteLine("Goodbye!");
         }
 
-        int choice;
-        do
+        int choice = 0;
+        while (choice != 4)
         {
-            printOptions();
+            printOptions(john);
             choice = Int32.Parse(Console.ReadLine());
 
             switch (choice)
@@ -115,7 +115,7 @@ public class CardHolder
                     Console.WriteLine("Invalid choice. Please choose a valid option.");
                     break;
             }
-        } while (choice != 4);
+        }
 
     }
 
